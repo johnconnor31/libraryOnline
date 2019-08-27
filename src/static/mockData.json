@@ -1,0 +1,107 @@
+[
+    {
+      "category": "Biographies",
+      "books": [
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        }
+      ]
+    },
+    {
+      "category": "Biographies",
+      "books": [
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        }
+      ]
+    },
+    {
+      "category": "Biographies",
+      "books": [
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        }
+      ]
+    },
+    {
+      "category": "Fiction",
+      "books": [
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        }
+      ]
+    },
+    {
+      "category": "Technology",
+      "books": [
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        },
+        {
+          "name": "Into the wild",
+          "price": "$5"
+        }
+      ]
+    }
+]
