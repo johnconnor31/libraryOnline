@@ -3,83 +3,83 @@
       "category": "Biographies",
       "books": [
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "The Epic Of Gilgamesh",
+          "price": "177.2"
+        },
+        {
+          "name": "The Divine Comedy",
+          "price": "188.5"
         },
         {
           "name": "Into the wild",
-          "price": "$5"
+          "price": "200.5"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "The Book Of Job",
+          "price": "120"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Pride and Prejudice",
+          "price": "500"
+        },
+        {
+          "name": "Molloy, Malone Dies, The Unnamable, the trilogy",
+          "price": "88"
+        },
+        {
+          "name": "Ficciones",
+          "price": "90"
         }
       ]
     },
     {
-      "category": "Biographies",
+      "category": "Science Fiction",
       "books": [
         {
-          "name": "Into the wild",
-          "price": "$5"
-        },
-        {
-          "name": "Into the wild",
-          "price": "$5"
-        },
-        {
-          "name": "Into the wild",
-          "price": "$5"
-        },
-        {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "One Thousand and One Nights",
+          "price": "10"
         }
       ]
     },
     {
-      "category": "Biographies",
+      "category": "Novels",
       "books": [
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Don Quijote De La Mancha",
+          "price": "50"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "The Canterbury Tales ",
+          "price": "72"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Nostromo",
+          "price": "55.24"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Great Expectations",
+          "price": "22.007"
+        },
+        {
+          "name": "Berlin Alexanderplatz",
+          "price": "1200"
         }
       ]
     },
     {
-      "category": "Fiction",
+      "category": "Auto Biography",
       "books": [
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Jacques the Fatalist",
+          "price": "50"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Crime and Punishment",
+          "price": "15000"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
-        },
-        {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "The Idiot",
+          "price": "2"
         }
       ]
     },
@@ -87,20 +87,20 @@
       "category": "Technology",
       "books": [
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Learning C",
+          "price": "5"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Learning Java",
+          "price": "10"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Ethical Hacking",
+          "price": "1000"
         },
         {
-          "name": "Into the wild",
-          "price": "$5"
+          "name": "Learning Reactjs",
+          "price": "100"
         }
       ]
     }

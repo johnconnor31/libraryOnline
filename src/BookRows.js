@@ -25,7 +25,9 @@ export default class BookRows extends Component {
       isNewForm,
       editBook,
       deleteBook,
-      editingBookIndex
+      editingBookIndex,
+      bookNameError,
+      bookPriceError
     } = this.props;
     const category = data[categoryIndex];
     return (
@@ -55,6 +57,8 @@ export default class BookRows extends Component {
                             label="Book Name"
                             onChange={this.props.setNewBook("newBookName")}
                             defaultValue={book.name}
+                            error={bookNameError}
+                            helperText={bookNameError}
                           />
                         </TableCell>
                         <TableCell>
@@ -64,13 +68,15 @@ export default class BookRows extends Component {
                             label="Price"
                             onChange={this.props.setNewBook("newBookPrice")}
                             defaultValue={book.price}
+                            error={bookPriceError}
+                            helperText={bookPriceError}
                           />
                         </TableCell>
                       </>
                     ) : (
                       <>
                         <TableCell>{book.name}</TableCell>
-                        <TableCell>{book.price}</TableCell>
+                        <TableCell>{'$'+book.price}</TableCell>
                       </>
                     )}
                     {isNewForm && (
