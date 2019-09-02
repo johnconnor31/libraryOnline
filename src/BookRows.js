@@ -10,35 +10,41 @@ import {
 } from "@material-ui/core";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteIcon from "@material-ui/icons/Delete";
+import BackIcon from "@material-ui/icons/KeyboardBackspace";
 import UpdateIcon from "@material-ui/icons/Done";
 import PropTypes from "prop-types";
 
 export default class BookRows extends Component {
   static propTypes = {
-    data: PropTypes.object,
-    categoryIndex: PropTypes.number
+    data: PropTypes.object
   };
   render() {
     const {
-      data,
-      categoryIndex,
-      isNewForm,
+      category,
+      isBookForm,
       editBook,
       deleteBook,
       editingBookIndex,
       bookNameError,
       bookPriceError
     } = this.props;
-    const category = data[categoryIndex];
     return (
       <div className="bookRows">
+        {!isBookForm && <Button
+              className="backArrow"
+              style={{ float: "left" }}
+              onClick={this.props.closeBooks}
+            >
+              <BackIcon />
+        </Button>
+        }
         <Table className="table">
           <TableHead>
             <TableRow>
               <TableCell>Book Name</TableCell>
               <TableCell>Book Price</TableCell>
-              {isNewForm && <TableCell />}
-              {isNewForm && <TableCell />}
+              {isBookForm && <TableCell />}
+              {isBookForm && <TableCell />}
             </TableRow>
           </TableHead>
           <TableBody>
@@ -55,9 +61,9 @@ export default class BookRows extends Component {
                             margin="dense"
                             id="bookName"
                             label="Book Name"
-                            onChange={this.props.setNewBook("newBookName")}
+                            onChange={this.props.setNewBookField("newBookName")}
                             defaultValue={book.name}
-                            error={bookNameError}
+                            error={bookNameError!==''}
                             helperText={bookNameError}
                           />
                         </TableCell>
@@ -66,9 +72,9 @@ export default class BookRows extends Component {
                             margin="dense"
                             id="bookPrice"
                             label="Price"
-                            onChange={this.props.setNewBook("newBookPrice")}
+                            onChange={this.props.setNewBookField("newBookPrice")}
                             defaultValue={book.price}
-                            error={bookPriceError}
+                            error={bookPriceError!==''}
                             helperText={bookPriceError}
                           />
                         </TableCell>
@@ -79,7 +85,7 @@ export default class BookRows extends Component {
                         <TableCell>{'$'+book.price}</TableCell>
                       </>
                     )}
-                    {isNewForm && (
+                    {isBookForm && (
                       <TableCell>
                         {editingBookIndex === i ? (
                           <Button onClick={this.props.updateBook(i)}>
@@ -91,7 +97,7 @@ export default class BookRows extends Component {
                         )}
                       </TableCell>
                     )}
-                    {isNewForm && (
+                    {isBookForm && (
                       <TableCell>
                         <Button onClick={deleteBook(i)}>
                           <DeleteIcon />
